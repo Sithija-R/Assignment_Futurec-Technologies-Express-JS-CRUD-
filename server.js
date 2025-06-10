@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./Config/databse');
+const UserRoutes = require('./Routes/userRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -10,6 +11,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
+app.use("/api/user",UserRoutes);
 
 connectDB().then(() => {
   app.listen(PORT, () => {
