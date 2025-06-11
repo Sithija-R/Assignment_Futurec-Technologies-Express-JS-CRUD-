@@ -22,8 +22,8 @@
 ```json
 {
   "name": "John Doe",
-  "email": "john@example.com",
-  "password": "securePassword123"
+  "email": "john@email.com",
+  "password": "Pwd123!"
 }
 ```
 
@@ -33,8 +33,8 @@
 - **Request Body (JSON)**:
 ```json
 {
-  "email": "john@example.com",
-  "password": "securePassword123"
+  "email": "john@email.com",
+  "password": "Pwd123!"
 }
 ```
 
